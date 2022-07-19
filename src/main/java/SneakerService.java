@@ -3,15 +3,10 @@ import com.sun.corba.se.spi.orbutil.fsm.StateImpl;
 import java.util.ArrayList;
 import java.util.List;
 
-public class SneakerService extends Sneaker{
-
-    SneakerService(String name,  String brand, String sport, double size, int qty, float price){
-
-    }
-
+public class SneakerService {
     public static int nextID = 1; //(1)
 
-    public static List<Sneaker> inventory = new ArrayList<>();
+    private List<Sneaker> inventory = new ArrayList<>();
 
     public SneakerService() {
 
