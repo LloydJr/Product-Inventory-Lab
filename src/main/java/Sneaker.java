@@ -1,3 +1,7 @@
+import java.awt.*;
+import java.util.ArrayList;
+import java.util.List;
+
 public class Sneaker {
     private int id;
     private String name;
@@ -7,8 +11,24 @@ public class Sneaker {
     private int qty;
     private float price;
 
+    public Sneaker(int expectedId, String expectedName, String expectedBrand, String expectedSport, int expectedQty, float expectedPrice) {
+        this.id = expectedId;
+        this.name = expectedName;
+        this.brand = expectedBrand;
+        this.sport = expectedSport;
+        this.qty = expectedQty;
+         this.price = expectedPrice;
+    }
 
-//    Sneaker sweetAdidas = new Sneaker(6, "Stan Smith", "Tennis", 10.5f, 10, 80.00f);
+    public Sneaker() {
+
+    }
+
+    public Sneaker(int id, String name, String brand, String sport, double size, int qty, float price) {
+    }
+
+
+    //    Sneaker sweetAdidas = new Sneaker(6, "Stan Smith", "Tennis", 10.5f, 10, 80.00f);
     public int getId() {
         return id;
     }
@@ -63,5 +83,6 @@ public class Sneaker {
     public void setPrice(float price) {
         this.price = price;
     }
+
 
 }

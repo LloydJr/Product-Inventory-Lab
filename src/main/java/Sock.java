@@ -6,6 +6,18 @@ public class Sock {
     private int qty;
     private float price;
 
+    public Sock(int expectedId, String expectedName, String expectedBrand, int expectedQty, float expectedPrice) {
+        this.id = expectedId;
+        this.name = expectedName;
+        this.brand = expectedBrand;
+        this.qty = expectedQty;
+        this.price = expectedPrice;
+    }
+
+    public Sock() {
+
+    }
+
     public int getId() {
         return id;
     }

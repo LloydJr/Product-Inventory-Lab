@@ -64,5 +64,24 @@ public class SockTest {
         //Then
         Assert.assertEquals(expected, testSock.getPrice(), 0.01d);
     }
+    @Test
+    public void constructorTest(){
 
+        // (2)
+        int expectedId = 2;
+        String expectedName = "Crew Socks";
+        String expectedBrand = "Adidas";
+        int expectedQty = 6;
+        float expectedPrice = 19.99f;
+
+        // (3)
+        Sock testSock = new Sock(expectedId, expectedName, expectedBrand, expectedQty,expectedPrice);
+
+        // (4)
+        Assert.assertEquals(expectedId, testSock.getId());
+        Assert.assertEquals(expectedName, testSock.getName());
+        Assert.assertEquals(expectedBrand, testSock.getBrand());
+        Assert.assertEquals(expectedQty, testSock.getQty());
+        Assert.assertEquals(expectedPrice, testSock.getPrice(), 0.01d);
+    }
 }
